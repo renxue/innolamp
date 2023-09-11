@@ -53,6 +53,7 @@ $(".navbar-toggler").on("click", function () {
 });
 // 当页面滚动时显示/隐藏回到顶部按钮
 const scrollToTopBtn = document.querySelector(".scroll-to-top");
+const inquiryBtn = document.querySelector(".inquiry-btn");
 window.addEventListener("scroll", () => {
   if (window.scrollY > 80) {
     $("nav").css({ "background-color": "black" });
@@ -65,6 +66,11 @@ window.addEventListener("scroll", () => {
   } else {
     scrollToTopBtn.classList.remove("show");
   }
+  if (window.scrollY > 600) {
+    inquiryBtn.classList.add("show");
+  } else {
+    inquiryBtn.classList.remove("show");
+  }
 });
 // 点击按钮时平滑滚动到页面顶部
 scrollToTopBtn.addEventListener("click", () => {
@@ -73,3 +79,4 @@ scrollToTopBtn.addEventListener("click", () => {
     behavior: "smooth",
   });
 });
+inquiryBtn.addEventListener("click", () => {});

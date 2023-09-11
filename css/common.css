@@ -57,6 +57,31 @@ section,
   transition: opacity 0.3s, visibility 0.3s;
 }
 
+.inquiry-btn.show {
+  opacity: 1;
+  visibility: visible;
+}
+.inquiry-btn {
+  position: fixed;
+  bottom: 50%;
+  right: 20px;
+  background-color: #dc3545;
+  color: white;
+  width: 70px;
+  height: 40px;
+  border-radius: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+.inquiry-btn a {
+  font-weight: 600;
+}
+
 /* 消息发送动画 */
 .success-message {
   display: none;
